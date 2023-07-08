@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  server-0:
+    image: test-server:1.0.0
+    environment:
+      - PORT=5000
+    ports:
+      - 5000:5000
+  server-1:
+    image: test-server:1.0.0
+    environment:
+      - PORT=5001
+    ports:
+      - 5001:5001
+  server-2:
+    image: test-server:1.0.0
+    environment:
+      - PORT=5002
+    ports:
+      - 5002:5002
+  server-3:
+    image: test-server:1.0.0
+    environment:
+      - PORT=5003
+    ports:
+      - 5003:5003
+  server-4:
+    image: test-server:1.0.0
+    environment:
+      - PORT=5004
+    ports:
+      - 5004:5004
